@@ -30,3 +30,29 @@
 *.exe
 *.out
 *.app
+*.elf
+
+# Debug symbols
+*.pdb
+
+# MSVC Export
+*.exp
+
+# MSVC Resources
+*.res
+
+# Build system
+*.obj2lib
+*.obj2dll
+*.obj2exe
+*.o2so
+*.o2elf
+*.config.md5
+
+# Development
+/output/
+/temp/
+/release/
+/source/
+/archive/
+/vendor/
