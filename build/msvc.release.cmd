@@ -17,6 +17,8 @@ exit 1
 
 set XYO_PATH_RELEASE=release
 
+xyo-cc libssh2 --has-archived-release --version-file=version.ini
+if errorlevel 1 exit 0
 call :cmdX cmd.exe /C build\msvc.cmd vendor
 call :cmdX cmd.exe /C build\msvc.cmd make
 call :cmdX cmd.exe /C build\msvc.cmd sign
