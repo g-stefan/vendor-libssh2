@@ -5,7 +5,7 @@ rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 
-echo -^> github-update vendor-libssh2
+echo - %BUILD_PROJECT% ^> platform github-update
 
 git fetch --prune --prune-tags
 git add --all

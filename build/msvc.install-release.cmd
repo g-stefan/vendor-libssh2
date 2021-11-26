@@ -3,9 +3,9 @@ rem Public domain
 rem http://unlicense.org/
 rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
-echo -^> install-release vendor-libssh2
+echo - %BUILD_PROJECT% ^> install-release
 
-set PROJECT=libssh2
+set PROJECT=%BUILD_PROJECT%
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 FOR /F "tokens=* USEBACKQ" %%F IN (`xyo-version --no-bump --get "--version-file=version.ini" %PROJECT%`) DO (
