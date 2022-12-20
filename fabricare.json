@@ -1,0 +1,9 @@
+{
+	"project": {
+		"name" : "libssh2",
+		"type" : "xyo-cpp",
+		"SPDX-License-Identifier": "LicenseRef-",
+		"sourceLink" : "https://github.com/libssh2/libssh2",
+		"version" : "1.10.0"
+	}
+}
