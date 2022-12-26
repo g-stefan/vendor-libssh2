@@ -17,7 +17,6 @@ if (!Shell.directoryExists("source")) {
 };
 
 Shell.mkdirRecursivelyIfNotExists("output");
-Shell.mkdirRecursivelyIfNotExists("output/bin");
 Shell.mkdirRecursivelyIfNotExists("output/include");
 Shell.mkdirRecursivelyIfNotExists("output/lib");
 Shell.mkdirRecursivelyIfNotExists("temp");
