@@ -7,6 +7,7 @@
 		"version" : "1.10.0",
 		"hasRelease" : true,
 		"noVersion" : true,
-		"githubRelease" : true
+		"githubRelease" : true,
+		"githubRepository" : "vendor-libssh2"
 	}
 }
