@@ -1,13 +1,18 @@
 {
-	"project": {
-		"name" : "libssh2",
+	"solution": {
+		"name" : "vendor-libssh2",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "BSD-3-Clause",
-		"sourceLink" : "https://github.com/libssh2/libssh2",
-		"version" : "1.10.0",
-		"hasRelease" : true,
-		"noVersion" : true,
-		"githubRelease" : true,
-		"githubRepository" : "vendor-libssh2"
+		"projects": [
+			{
+				"name" : "libssh2",
+				"SPDX-License-Identifier": "BSD-3-Clause",
+				"sourceLink" : "https://github.com/libssh2/libssh2",
+				"version" : "1.10.0",
+				"noVersion" : true
+			}
+		],
+		"releaseName" : "libssh2",
+		"hasGithub" : true
 	}
 }
+
