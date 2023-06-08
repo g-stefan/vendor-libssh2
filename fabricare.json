@@ -11,8 +11,7 @@
 				"noVersion" : true
 			}
 		],
-		"releaseName" : "libssh2",
-		"hasGithub" : true
+		"releaseName" : "libssh2"
 	}
 }
 
