@@ -17,8 +17,12 @@ if (Shell.fileExists("archive/" + Project.vendor + ".7z")) {
 	Shell.removeFile("archive/" + Project.vendor + ".7z");
 };
 
-Console.writeLn("curl --insecure --location https://github.com/g-stefan/vendor-" + Project.name + "/releases/download/v" + Project.version + "/" + Project.vendor + ".7z --output archive/" + Project.vendor + ".7z");
-exitIf(Shell.system("curl --insecure --location https://github.com/g-stefan/vendor-" + Project.name + "/releases/download/v" + Project.version + "/" + Project.vendor + ".7z --output archive/" + Project.vendor + ".7z"));
+var vendorSourceGit = "https://github.com/g-stefan";
+if (Shell.hasEnv("VENDOR_SOURCE_GIT")) {
+	vendorSourceGit = Shell.getenv("VENDOR_SOURCE_GIT");
+};
+
+exitIf(Shell.system("curl --insecure --location " + vendorSourceGit + "/vendor-" + Project.name + "/releases/download/v" + Project.version + "/" + Project.vendor + ".7z --output archive/" + Project.vendor + ".7z"));
 if (Shell.getFileSize("archive/" + Project.vendor + ".7z") > 16) {
 	return;
 };
