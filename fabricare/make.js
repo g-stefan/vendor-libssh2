@@ -36,6 +36,11 @@ if (!Shell.fileExists("temp/build.config.flag")) {
 	cmdConfig += " -DBUILD_EXAMPLES=OFF";
 	cmdConfig += " -DBUILD_TESTING=OFF";
 
+	if(Fabricare.isStatic()) {
+		cmdConfig += " -DBUILD_SHARED_LIBS=OFF";
+		cmdConfig += " -DWIN32_MT_BUILD=ON";
+	};
+
 	runInPath("temp/cmake", function() {
 		exitIf(Shell.system(cmdConfig));
 	});
