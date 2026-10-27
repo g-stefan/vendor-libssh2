@@ -1,6 +1,5 @@
 {
 	"solution": {
-		"namespace" : "xyo",
 		"name" : "vendor-libssh2",
 		"type" : "xyo-cpp",
 		"projects": [
